@@ -1,0 +1,20 @@
+<html>
+    <script>
+        window.onload= function() {
+            Redirect();
+        };
+
+        function Redirect(){
+        // An array of URL's
+            var randURLs = [
+                "www.google.com",
+                "www.youtube.com",
+                "www.facebook.com"
+            ];
+
+            var randURL = Math.floor(Math.random() * randURLs.length);
+
+            window.location.href = "https://" + randURLs[randURL];
+        }
+    </script>
+</html>
